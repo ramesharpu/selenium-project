@@ -60,13 +60,6 @@ public class BasicExample {
 		System.out.println("Title URL - " +bDriver.getTitle());
 	}
 
-	public void testBrowserNavigate(){
-		bDriver.navigate().to("https://www.google.com");
-		bDriver.navigate().back();
-		bDriver.navigate().forward();
-		bDriver.navigate().refresh();
-	}
-
 	public static void main(String[] args) {
 		BasicExample driver = new BasicExample();
 		driver.openBrowser("chrome", "https://www.facebook.com");
